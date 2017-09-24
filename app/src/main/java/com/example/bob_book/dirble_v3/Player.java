@@ -28,6 +28,7 @@ public class Player extends AppCompatActivity {
         stream=getIntent().getExtras().getString("stream");
         System.out.println(stream);
 
+        System.out.println("testGit");
 
 
 
