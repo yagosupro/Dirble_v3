@@ -68,10 +68,12 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
     class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView post;
         TextView site;
-        String StreamPosts;
         private final Context context;
         private List<Stream> streamList;
         String streamPosts;
+        Integer streamStatus;
+        String content_type;
+        Integer listeners;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -88,9 +90,9 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
             int position = getAdapterPosition();
             itemClick(position);
 
-            Intent i=new Intent(context,Player.class);
-            i.putExtra("stream",streamPosts);
-            context.startActivity(i);
+            //Intent i=new Intent(context,Player.class);
+            //i.putExtra("stream",streamPosts);
+            //context.startActivity(i);
 
 
         }
@@ -99,8 +101,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
             System.out.println(position);
             streamList=posts.get(position).getStreams();
             streamPosts=streamList.get(0).getStream();
-            System.out.println(post.getText());
-            System.out.println(site.getText());
+
 
 
 

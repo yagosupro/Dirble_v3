@@ -23,7 +23,7 @@ public class Player extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_player);
+
 
         stream=getIntent().getExtras().getString("stream");
         System.out.println(stream);
