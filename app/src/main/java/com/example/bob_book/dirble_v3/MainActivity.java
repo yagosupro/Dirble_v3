@@ -57,12 +57,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
 
         });
+        startRadioService();
+
 
 
     }
-    public void startPlayerService(){
-        Intent serviceIntent = new Intent(MainActivity.this, NotificationService.class);
-
+    //public void startPlayerService(){
+    //    Intent serviceIntent = new Intent(MainActivity.this, NotificationService.class);
+//
+  //      startService(serviceIntent);
+    //}
+    public void startRadioService(){
+        Intent serviceIntent= new Intent(MainActivity.this,RadioService.class);
         startService(serviceIntent);
     }
     @Override

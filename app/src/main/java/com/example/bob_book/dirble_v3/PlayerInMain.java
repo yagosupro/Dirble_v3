@@ -68,6 +68,8 @@ public class PlayerInMain {
        // if(exoPlayer!= null) {
        //     exoPlayer.sendMessage(audioRenderer, MediaCodecAudioTrackRenderer.MSG_SET_VOLUME, volume);
         }
-    }
+
+
+}
 
 

@@ -101,11 +101,12 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
             System.out.println(position);
             streamList=posts.get(position).getStreams();
             streamPosts=streamList.get(0).getStream();
-
-
-
+            System.out.println(streamPosts);
+//work radio
+//http://relay4.181.fm:8128
 
         }
+
     }}
 
 
